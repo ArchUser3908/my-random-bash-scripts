@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "how many links do you have?"
+read numlinks
+for ((i = 1; i <= $numlinks; i++)); do
+  echo "enter link(s)"
+  read link
+  ytdlp "$link"
+done
